@@ -32,7 +32,7 @@
         <scene sceneID="Lfh-Aa-CEj">
             <objects>
                 <viewControllerPlaceholder storyboardName="Voting" id="LFH-Oa-CtB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="yhP-J9-ubx"/>
+                    <tabBarItem key="tabBarItem" title="Voting" id="yhP-J9-ubx"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YbZ-ED-6gT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -42,7 +42,7 @@
         <scene sceneID="VJp-wQ-rUO">
             <objects>
                 <viewControllerPlaceholder storyboardName="Results" id="19z-SO-1gC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="0RL-A6-Ts5"/>
+                    <tabBarItem key="tabBarItem" title="Results" id="0RL-A6-Ts5"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fyg-Ln-B3k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -52,7 +52,7 @@
         <scene sceneID="Oyc-u1-ayn">
             <objects>
                 <viewControllerPlaceholder storyboardName="Combined" id="wIV-Pa-iWo" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="jqM-AV-Xt1"/>
+                    <tabBarItem key="tabBarItem" title="Combined" id="jqM-AV-Xt1"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="byQ-f6-f5h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

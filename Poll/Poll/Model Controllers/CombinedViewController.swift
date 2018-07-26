@@ -24,12 +24,12 @@ class CombinedViewController: UIViewController, VoteControllerProtocol {
 
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.destination.restorationIdentifier == "EmbedToVoting" {
+        if segue.identifier == "embedToVoting" {
             if let viewController = segue.destination as? VoteControllerProtocol {
                 viewController.voteController = voteController
             }
             
-        } else if segue.destination.restorationIdentifier == "EmbedToResults"{
+        } else if segue.identifier == "embedToResults"{
             if let viewConroller = segue.destination as? VoteControllerProtocol {
                 viewConroller.voteController = voteController
             }

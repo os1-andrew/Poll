@@ -18,56 +18,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="Question" text="What color Starburst should be removed from the original line up?" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RuD-Fl-nxq">
-                                <rect key="frame" x="40" y="60" width="295" height="52"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qn4-5K-A5o">
-                                <rect key="frame" x="40" y="128" width="295" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Ap4-gI-Qpo"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Response" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EHR-H3-GtI">
-                                <rect key="frame" x="40" y="166" width="295" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="0A1-v9-n7B"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5rg-H9-f5K">
-                                <rect key="frame" x="163" y="204" width="49" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="hbw-Ow-LSG"/>
-                                </constraints>
-                                <state key="normal" title="Submit"/>
-                                <connections>
-                                    <action selector="submitVote:" destination="81c-K8-sex" eventType="touchUpInside" id="feu-hQ-rdR"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="x7x-qO-Ur6">
+                                <rect key="frame" x="58" y="97" width="259.5" height="161"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" restorationIdentifier="Question" text="What color Starburst should be removed from the original line up?" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="RuD-Fl-nxq">
+                                        <rect key="frame" x="0.0" y="0.0" width="259.5" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qn4-5K-A5o">
+                                        <rect key="frame" x="0.0" y="51" width="259.5" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Ap4-gI-Qpo"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Response" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EHR-H3-GtI">
+                                        <rect key="frame" x="0.0" y="91" width="259.5" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="0A1-v9-n7B"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5rg-H9-f5K">
+                                        <rect key="frame" x="0.0" y="131" width="259.5" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="hbw-Ow-LSG"/>
+                                        </constraints>
+                                        <state key="normal" title="Submit"/>
+                                        <connections>
+                                            <action selector="submitVote:" destination="81c-K8-sex" eventType="touchUpInside" id="feu-hQ-rdR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="RuD-Fl-nxq" firstAttribute="centerX" secondItem="1kd-m4-xCJ" secondAttribute="centerX" id="10h-k2-a0T"/>
-                            <constraint firstItem="EHR-H3-GtI" firstAttribute="top" secondItem="qn4-5K-A5o" secondAttribute="bottom" constant="8" symbolic="YES" id="8yQ-NZ-YKW"/>
-                            <constraint firstItem="RuD-Fl-nxq" firstAttribute="leading" secondItem="qn4-5K-A5o" secondAttribute="leading" id="IKB-fQ-x3i"/>
-                            <constraint firstItem="qn4-5K-A5o" firstAttribute="trailing" secondItem="EHR-H3-GtI" secondAttribute="trailing" id="IkX-K7-zDr"/>
-                            <constraint firstItem="9ch-kS-BkE" firstAttribute="bottom" secondItem="5rg-H9-f5K" secondAttribute="bottom" constant="384" id="KXW-cz-F7V"/>
-                            <constraint firstItem="qn4-5K-A5o" firstAttribute="top" secondItem="RuD-Fl-nxq" secondAttribute="bottom" constant="16" id="Prp-KS-uT9"/>
-                            <constraint firstItem="RuD-Fl-nxq" firstAttribute="trailing" secondItem="qn4-5K-A5o" secondAttribute="trailing" id="R36-jM-MUp"/>
-                            <constraint firstItem="EHR-H3-GtI" firstAttribute="centerX" secondItem="5rg-H9-f5K" secondAttribute="centerX" id="U3t-En-sC4"/>
-                            <constraint firstItem="RuD-Fl-nxq" firstAttribute="leading" secondItem="9ch-kS-BkE" secondAttribute="leading" constant="40" id="UZ1-GX-phi"/>
-                            <constraint firstItem="5rg-H9-f5K" firstAttribute="top" secondItem="EHR-H3-GtI" secondAttribute="bottom" constant="8" symbolic="YES" id="Z12-de-bYb"/>
-                            <constraint firstItem="RuD-Fl-nxq" firstAttribute="top" secondItem="9ch-kS-BkE" secondAttribute="top" constant="40" id="l3U-A1-6cD"/>
-                            <constraint firstItem="qn4-5K-A5o" firstAttribute="leading" secondItem="EHR-H3-GtI" secondAttribute="leading" id="wV6-bt-iDO"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="9ch-kS-BkE"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Voting" id="gqJ-Kv-n96"/>

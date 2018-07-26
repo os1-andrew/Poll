@@ -26,6 +26,8 @@ class VotingViewController: UIViewController, VoteControllerProtocol {
             let response = responseLabel.text else {return}
         
         voteController?.createVote(withName: name, response: response)
+        nameLabel.text = ""
+        responseLabel.text = ""
     }
     
     /*
