@@ -8,7 +8,7 @@
 
 import UIKit
 
-class VotingViewController: UIViewController {
+class VotingViewController: UIViewController, VoteControllerProtocol {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +21,13 @@ class VotingViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func submitVote(_ sender: Any) {
+        guard let name = nameLabel.text,
+            let response = responseLabel.text else {return}
+        
+        voteController?.createVote(withName: name, response: response)
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -31,5 +37,10 @@ class VotingViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    var voteController: VoteController?
+    
+    @IBOutlet weak var questionLabel: UILabel!
+    @IBOutlet weak var nameLabel: UITextField!
+    @IBOutlet weak var responseLabel: UITextField!
 }

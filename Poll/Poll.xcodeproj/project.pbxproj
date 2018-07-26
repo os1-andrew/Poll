@@ -21,6 +21,7 @@
 		101584CD210A5AF9003B191D /* Combined.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 101584CC210A5AF9003B191D /* Combined.storyboard */; };
 		101584CF210A5D2C003B191D /* CombinedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101584CE210A5D2C003B191D /* CombinedViewController.swift */; };
 		101584D1210A5FDF003B191D /* PollingTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101584D0210A5FDF003B191D /* PollingTabBarViewController.swift */; };
+		101584D3210A668A003B191D /* VoteControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101584D2210A668A003B191D /* VoteControllerProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		101584CC210A5AF9003B191D /* Combined.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Combined.storyboard; sourceTree = "<group>"; };
 		101584CE210A5D2C003B191D /* CombinedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinedViewController.swift; sourceTree = "<group>"; };
 		101584D0210A5FDF003B191D /* PollingTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PollingTabBarViewController.swift; path = "Poll/Model Controllers/PollingTabBarViewController.swift"; sourceTree = SOURCE_ROOT; };
+		101584D2210A668A003B191D /* VoteControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteControllerProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				101584AA210A53B1003B191D /* ViewController.swift */,
 				101584C5210A5A2C003B191D /* VotingViewController.swift */,
 				101584D0210A5FDF003B191D /* PollingTabBarViewController.swift */,
+				101584D2210A668A003B191D /* VoteControllerProtocol.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 			files = (
 				101584CA210A5AB4003B191D /* ResultsTableViewController.swift in Sources */,
 				101584AB210A53B1003B191D /* ViewController.swift in Sources */,
+				101584D3210A668A003B191D /* VoteControllerProtocol.swift in Sources */,
 				101584CF210A5D2C003B191D /* CombinedViewController.swift in Sources */,
 				101584C0210A5702003B191D /* VoteController.swift in Sources */,
 				101584D1210A5FDF003B191D /* PollingTabBarViewController.swift in Sources */,
