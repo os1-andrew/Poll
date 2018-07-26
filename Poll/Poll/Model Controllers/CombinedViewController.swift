@@ -21,8 +21,6 @@ class CombinedViewController: UIViewController, VoteControllerProtocol {
         // Dispose of any resources that can be recreated.
     }
     
-
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "embedToVoting" || segue.identifier == "embedToResults" {
             if let viewController = segue.destination as? VoteControllerProtocol {
